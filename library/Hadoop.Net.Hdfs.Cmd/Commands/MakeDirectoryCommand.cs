@@ -22,7 +22,7 @@ namespace Hadoop.Net.Hdfs.Cmd.Commands
 
         public bool ValidateCommand(List<string> parameters)
         {
-            return parameters?.Count() == 1;
+            return parameters?.Count == 1;
         }
 
         public void ShowHelp()

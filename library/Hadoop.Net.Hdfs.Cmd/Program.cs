@@ -14,7 +14,9 @@ namespace Hadoop.Net.Hdfs.Cmd
                 new ListCommand(),
                 new StatusCommand(),
                 new MakeDirectoryCommand(),
-                new DeleteCommand()
+                new DeleteCommand(),
+                new UploadFileCommand(),
+                new DownloadFile()
             }
           );
 

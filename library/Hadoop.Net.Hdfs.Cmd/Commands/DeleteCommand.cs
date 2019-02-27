@@ -30,9 +30,9 @@ namespace Hadoop.Net.Hdfs.Cmd.Commands
 
         public bool ValidateCommand(List<string> parameters)
         {
-            return parameters?.Count() == 1 ||
-                   parameters?.Count() == 2 &&
-                   (parameters.ToList()[1] == "Recursive" || parameters.ToList()[1] == "NoRecursive");
+            return parameters?.Count == 1 ||
+                   parameters?.Count == 2 &&
+                   (parameters[1] == "Recursive" || parameters[1] == "NoRecursive");
         }
     
 
