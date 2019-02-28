@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hadoop.Net.MapReduce.Gus.Street.Mapper", "Hadoop.Net.MapReduce.Gus.Street.Mapper\Hadoop.Net.MapReduce.Gus.Street.Mapper.csproj", "{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hadoop.Net.MapReduce.Gus.Street.Reducer", "Hadoop.Net.MapReduce.Gus.Street.Reducer\Hadoop.Net.MapReduce.Gus.Street.Reducer.csproj", "{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hadoop.Net.MapReduce.Gus.Street.Mapper.AlterKeyAndValue", "Hadoop.Net.MapReduce.Gus.Street.Mapper.AlterKeyAndValue\Hadoop.Net.MapReduce.Gus.Street.Mapper.AlterKeyAndValue.csproj", "{F2C1B628-CC2B-4BA8-89BA-7600833D7444}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Debug|x64.Build.0 = Debug|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Debug|x86.Build.0 = Debug|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Release|x64.ActiveCfg = Release|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Release|x64.Build.0 = Release|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Release|x86.ActiveCfg = Release|Any CPU
+		{ACE6ED99-ED1D-41AE-ACFB-ED07B72FAC8E}.Release|x86.Build.0 = Release|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Debug|x64.Build.0 = Debug|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Debug|x86.Build.0 = Debug|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Release|x64.ActiveCfg = Release|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Release|x64.Build.0 = Release|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Release|x86.ActiveCfg = Release|Any CPU
+		{1527E6C9-A71D-4C7E-8E9D-415E3F93B181}.Release|x86.Build.0 = Release|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Debug|x64.Build.0 = Debug|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Debug|x86.Build.0 = Debug|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Release|x64.ActiveCfg = Release|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Release|x64.Build.0 = Release|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Release|x86.ActiveCfg = Release|Any CPU
+		{F2C1B628-CC2B-4BA8-89BA-7600833D7444}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
