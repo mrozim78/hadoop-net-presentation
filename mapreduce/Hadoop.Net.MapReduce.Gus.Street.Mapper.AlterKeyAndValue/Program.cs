@@ -18,7 +18,7 @@ namespace Hadoop.Net.MapReduce.Gus.Street.Mapper.AlterKeyAndValue
                     Console.WriteLine($"{key}\t{value}");
                 } else
                 {
-                    Console.Error.WriteLine("reporter:counter:Dewey.MapReduce.Example,Bad input lines,1");
+                    Console.Error.WriteLine("reporter:counter:Hadoop.Net.MapReduce.Gus.Street.Mapper.AlterKeyAndValue,Bad input lines,1");
                 }
                 line = Console.ReadLine();
             }
