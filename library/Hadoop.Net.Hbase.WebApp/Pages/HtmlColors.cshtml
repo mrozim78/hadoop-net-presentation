@@ -1,0 +1,22 @@
+@page
+@model Hadoop.Net.Hbase.WebApp.Pages.HtmlColors
+
+@{
+      ViewData["Title"] = "Generate Colors";
+}
+
+<div class="text-center">
+      <h1 class="display-4">Generate Colors</h1>
+</div>
+@if (!string.IsNullOrEmpty(Model.Message)) {
+      <div class="alert alert-success">@Model.Message</div>
+}
+<form asp-page="/HtmlColors" method="post" name="sentMessage">
+  
+      <div class="control-group form-group">
+            <input name="numberOfColors" type="text" class="form-control" placeholder="Number of colors" />
+      </div>
+      <div class="control-group form-group">
+            <input type="submit" class="btn btn-success" value="Generate" />
+      </div>
+ </form>
