@@ -44,4 +44,49 @@ TBLPROPERTIES("hbase.table.name" = "user_color")
 
 ```
 
+To get result
+```sql
+select 
+user_color_count_tmp.red ,
+user_color_count_tmp.green,
+user_color_count_tmp.blue,
+user_color_count_tmp.alpha,
+sum(red_number) as as_red,
+sum(green_number) as as_green,
+sum(blue_number) as as_blue
+from (
+    select 
+    colors.red ,
+    colors.green,
+    colors.blue ,
+    colors.alpha,
+    case when user_color_tmp.is_red='true' then 1 
+         else 0 
+    end as red_number , 
+
+    case when user_color_tmp.is_green='true' then 1
+        else 0
+    end as green_number, 
+
+    case when user_color_tmp.is_blue='true' then 1
+        else 0
+    end as blue_number
+    from
+    colors left join
+    (
+        select split(key,'\\|')[0] as color_key , 
+        is_red , 
+        is_green , 
+        is_blue 
+        from user_color
+    ) as user_color_tmp 
+    on colors.key = user_color_tmp.color_key) 
+as user_color_count_tmp
+group by
+user_color_count_tmp.red ,
+user_color_count_tmp.green,
+user_color_count_tmp.blue,
+user_color_count_tmp.alpha
+```
+
 
