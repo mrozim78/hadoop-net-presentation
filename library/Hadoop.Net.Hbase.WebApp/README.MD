@@ -5,7 +5,7 @@ First add table to HBase database
 ```sql
 create 'colors','definition'
 
-create 'user_color','',''
+create 'user_color','answer','header'
 ```
 To get result in Hive. 
 
