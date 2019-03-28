@@ -7,7 +7,11 @@ create 'colors','definition'
 
 create 'user_color','answer','header'
 ```
-To get result in Hive. 
+To get result in Hive. First use beeline:
+
+```bash
+beeline -u jdbc:hive2://localhost:10000
+```
 
 First create table 'colors'
 
