@@ -22,20 +22,20 @@
                 <input type="hidden" asp-for="UserColorForm.Color" value="@Model.Color.Key"/>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" asp-for="UserColorForm.UserColor" value="red">
-                    <label class="form-check-label" asp-for="UserColorForm.UserColor" style="color: red;">
+                    <label class="form-check-label" style="color: red;" input-value="red" name="label_color">
                         Red
                     </label>
                 </div>
 
                 <div class="form-check">
                     <input class="form-check-input" type="radio" asp-for="UserColorForm.UserColor" value="green">
-                    <label class="form-check-label" asp-for="UserColorForm.UserColor" style="color: green;">
+                    <label class="form-check-label" style="color: green;" input-value="green" name="label_color">
                         Green
                     </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" asp-for="UserColorForm.UserColor" value="blue">
-                    <label class="form-check-label blue" asp-for="UserColorForm.UserColor" style="color: blue;">
+                    <label class="form-check-label" style="color: blue;" input-value="blue" name="label_color">
                         Blue
                     </label>
                 </div>
@@ -55,4 +55,12 @@ else
     <div class="text-center">
         <h1 class="display-4">Generate colors</h1>
     </div>
+}
+@section Scripts
+{
+    <script>
+        $("[name='label_color'").click(function() {
+            $("#UserColorForm_UserColor[value='"+$(this).attr('input-value')+"']").prop("checked",true);
+        });
+    </script>
 }
