@@ -3,6 +3,8 @@ MAINTAINER "Remigiusz Mrozek <mrozi.m@gmail.com>"
 
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+RUN mkdir /usr/lib/jvm
+RUN ln -s /usr/local/openjdk-8 /usr/lib/jvm/java-8-openjdk-amd64
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends net-tools curl wget gpg apt-transport-https openssh-client
 
@@ -34,6 +36,7 @@ ENV MULTIHOMED_NETWORK=1
 
 ENV USER=root
 ENV PATH $HADOOP_PREFIX/bin/:$PATH
+
 
 #Koniec wstawienia
 
